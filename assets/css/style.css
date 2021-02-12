@@ -500,10 +500,12 @@ header {
 .symptoms_section .symptoms_help .simptom_help_row {
     padding: 20px;
     display: flex;
+    justify-content: space-between;
     width: 83%;
     margin: 0 auto;
 }
 .symptoms_section .symptoms_help .simptom_help_row .simptom_help_row_desc{
+    
     max-width: 65%;
     line-height: 1.5;
 }
@@ -516,8 +518,7 @@ header {
     color: #fff;
     font-size: 12px;
     padding: 10px 30px;
-    border-radius: 30px;
-    margin-left: 150px;
+    border-radius: 30px;  
 }
 .symptoms_section .symptoms_help .simptom_help_row .simptom_help_row_btn .fa-phone-alt{
     margin-right: 10px;
