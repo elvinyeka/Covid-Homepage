@@ -3,4 +3,4 @@
 ## General Info
 I tried to clone the homepage of the Covid template. I followed the Flexbox approach.
 
-What I made: 
+What I made: [https://elvinyeka.github.io/Covid-Homepage/.](https://elvinyeka.github.io/Covid-Homepage/.)
