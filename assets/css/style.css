@@ -19,21 +19,28 @@ header {
     background-color: rgba(111,66,193, 0.1);
 }
 .header{
-    width: 100%; 
+    width: 83%; 
+    margin: 0 auto;
+    position: relative;
       
 }
 .header_items {
     height: 5em;
     display: flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-between; 
+}
+.header .header_items .header_nav #hamburger {
+    display: none;
+}
+.menu-btn {
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
 }
 .header_logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -62px;
 }
 .header_logo a{
     font-size: 20px;
@@ -47,6 +54,7 @@ header {
     height: 70px;
     font-size: 16px;
     display: flex;
+
     
 }
 .header_nav ul {
@@ -687,3 +695,166 @@ header {
     color: #e84a5f;
 }
 /* footer section end    */
+
+@media all and (max-width: 768px) {
+
+    .banner .banner_items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .banner .banner_items .banner_desc p a{
+        font-size: 20px;
+    }
+    .banner .banner_items .banner_image {
+        margin-top: 30px;
+    }
+     .header_nav .menu-btn {
+        display: flex;
+        float: right;
+    }
+    .header_nav ul {
+        display: none;
+    }
+    .header_nav #hamburger:checked {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        background-color: #fff;
+        margin-right: 100px;
+        width: 60vw;
+        height: 60vh;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    /* .header_nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        background-color: #fff;
+        margin-right: 100px;
+        width: 60vw;
+        height: 60vh;
+        text-align: center;
+        transition: all 0.5s;
+    }  */
+
+    /* statistic  */
+    .statistic_main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* whatis_section  */
+    .whatis_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .whatis_section figure {
+        margin-left: 60px;
+    }
+    .whatis_section .whatis_desc {
+        margin-left: 60px;
+    }
+
+    /* features */
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+    /* prevent_section  */
+    .prevent_section .prevent_box {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .prevent_section .prevent_box .col_left {
+        max-width: 100%;
+    }
+    .prevent_section .prevent_box .col_right {
+        width: 100%;
+    }
+
+    /* protect_section  */
+    .protect_section .protect_header{
+        width: 83%;
+    }
+    .protect_section .protect_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .protect_section .protect_main .protect_col_left {
+        max-width: 100%;
+        /* display: flex;
+        justify-content: center; */
+        margin: 0 auto;
+    }
+    .protect_section .protect_main .protect_col_right {
+        max-width: 83%;
+    }
+
+    /* symptoms_section */
+    .symptoms_section .symptoms_header {
+        width: 100%;
+    }
+    .symptoms_section .symptoms_main .symptoms_card{
+        max-width: 100%;
+    }
+    .symptoms_section .symptoms_help .simptom_help_row{
+        display: flex;
+        flex-direction: column;
+    }
+    .symptoms_section .symptoms_help .simptom_help_row .simptom_help_row_desc {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* NEWS&ARTICLES SECTION */
+    .news_section .news_header {
+        width: 100%;
+    }
+    .news_section .news_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .news_section .news_main .news_main_col {
+        max-width: 83%;
+        margin: 0 auto;
+    }
+    /* FOOTER */
+    .footer .footer_container .row_footer_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_container .row_footer_main .footer_col_left {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .footer .footer_container .row_footer_main .footer_col_right {
+        display: flex;
+        flex-direction: column;
+        max-width: 83%;
+    }
+    .footer .footer_container .row_footer_main .footer_col_right .footer_link_col {
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .protect_section .protect_main .protect_col_left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        font-size: 12px;
+    }
+    .protect_section .protect_main .protect_col_left .lef_do li {
+        padding-right: 0;
+    }
+
+    
+}
