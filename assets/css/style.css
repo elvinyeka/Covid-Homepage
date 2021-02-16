@@ -33,8 +33,10 @@ header {
     display: none;
 }
 .menu-btn {
-    font-size: 40px;
+    font-size: 25px;
     cursor: pointer;
+    float: right;
+    line-height: 60px;
     display: none;
 }
 .header_logo {
@@ -711,22 +713,29 @@ header {
         margin-top: 30px;
     }
      .header_nav .menu-btn {
-        display: flex;
-        float: right;
+        display: block;
+        color: #000
+        /* margin-right: 20px; */
     }
-    .header_nav ul {
-        display: none;
-    }
-    .header_nav #hamburger:checked {
+    .header_nav ul{
         display: flex;
         flex-direction: column;
-        padding: 1.5rem;
-        background-color: #fff;
-        margin-right: 100px;
-        width: 60vw;
-        height: 60vh;
+        position: fixed;
+        width: 100%; 
+        height: 50vh; 
+        background-color:#EAE2F6;
+        top: 60px;
+        right: -100%;
         text-align: center;
         transition: all 0.5s;
+    }
+    .header_nav li {
+        width: 100%;
+        font-size: 30px;
+        border-bottom: 2px solid #fff;
+    }
+    #hamburger:checked ~ ul {
+        right: 0;
     }
     /* .header_nav ul {
         display: flex;
