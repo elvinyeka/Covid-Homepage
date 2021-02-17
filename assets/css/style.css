@@ -185,10 +185,10 @@ header {
     display: flex; 
 }
 .whatis_section .whatis_video {
-    width: 450px;
+    width: 83%;
 } 
 .whatis_section .whatis_video  img{
-     width: 450px;
+     width: 100%;
 }
 .whatis_section .whatis_video .whatis_video_btn {
     position: relative;
@@ -737,18 +737,7 @@ header {
     #hamburger:checked ~ ul {
         right: 0;
     }
-    /* .header_nav ul {
-        display: flex;
-        flex-direction: column;
-        padding: 1.5rem;
-        background-color: #fff;
-        margin-right: 100px;
-        width: 60vw;
-        height: 60vh;
-        text-align: center;
-        transition: all 0.5s;
-    }  */
-
+    
     /* statistic  */
     .statistic_main {
         display: flex;
@@ -854,16 +843,142 @@ header {
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 481px) {
     .protect_section .protect_main .protect_col_left {
         display: flex;
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 30px;
         font-size: 12px;
     }
     .protect_section .protect_main .protect_col_left .lef_do li {
         padding-right: 0;
     }
+    /* banner section  */
+    .banner {
+        padding-top: 20px;
+        height: 28vh;
+    }
+    .banner .banner_items {
+        flex-direction: unset;
+    }
+    .banner .banner_items .banner_image {
+        display: none;
+    }
+    .banner .banner_items .banner_desc h1 {
+        font-size: 25px;
+    }
+    .banner .banner_items .banner_desc p a {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .banner .banner_items .banner_desc .banner_text {
+        margin-bottom: 15px;
+    }
+    .container {
+        padding: 60px 0;
+    }
+    .statistic_header {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 
+    /* whatis_section */
+    .whatis_section {
+        width: 100%;
+    }
+    .whatis_section .whatis_video {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .whatis_section .whatis_video figure {
+        margin-left: 0;
+    }
+    .whatis_section .whatis_desc {
+        margin: 0 auto;
+        max-width: 84%;
+    }
+    .whatis_section .whatis_desc span {
+        margin-top: 40px;
+    }
+    /* .features */
+    .features  .features_desc {
+        margin-bottom: 10px;
+    }
+    .features  .features_desc p{
+        width: 100%;
+    }
+
+    /* prevent_section */
+    .prevent_section .prevent_box  {
+        width: 100%;
+        justify-content: center;
+    }
+    .prevent_section .prevent_box .card {
+        width: 45%;
+        margin: 10px auto;
+    }
+
+    .prevent_section .prevent_box .col_right {
+        padding-top: 20px;
+        padding-left: 0;
+        max-width: 92%;
+        margin: 0 auto;
+    }
+    .prevent_section .prevent_box .col_right a{
+        font-size: 14px;
+    }
+
+    /* .protect_section */
+    .protect_section {
+        width: 100%;
+    }
+    .protect_section .protect_header {
+        width: 90%;
+    }
+    .protect_section .protect_header h2 {
+        font-size: 30px;
+    }
+
+    /* .symptoms_section */
+    .symptoms_section {
+        width: 96%;
+    }
+    .symptoms_section .symptoms_header h2 {
+        font-size: 30px;
+    }
+    .symptoms_section .symptoms_header p {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .symptoms_section .symptoms_help .simptom_help_row {
+        width: 100%;
+    }
+
+    /* .news_section */
+    .news_section {
+        width: 100%;
+    }
+    .news_section .news_header h2{
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    .news_section .news_header p{
+        width: 84%;
+        margin: 15px auto;
+    }
+    .news_section .news_main .news_main_col {
+        margin: 10px auto;
+    }
+
+    /* .footer */
+    .footer {
+        padding: 10px 0 50px;
+    }
+    .footer .footer_container {
+        max-width: 94%;
+    } 
     
+    .footer .footer_container .row_footer {
+        padding-top: 20px;
+    }
 }
