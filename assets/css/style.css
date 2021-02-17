@@ -94,7 +94,7 @@ header {
     margin: 0 auto;
 }
 .banner .banner_items .banner_desc{
-    width: 450px;
+    width: 50%;
     color: rgb(113,83,193);
 }
 .banner .banner_items .banner_desc span {
@@ -136,7 +136,7 @@ header {
     padding: 90px 0;
 }
 .statistic_header {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
 .statistic_header h2 {
@@ -269,7 +269,7 @@ header {
     line-height: 1.5;
 }
 .features .features_desc p {
-    width: 150px;
+    width: 100%;
     line-height: 1.5;
 }
 /* features section  end */
@@ -296,7 +296,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 45%;
-    height: 300px;
+    height: 50vh;
     margin-right: 20px;
     background-color: #fff;
     box-shadow: 0 15px 30px 0 rgba(113,83,193, 0.1);
@@ -307,7 +307,7 @@ header {
 .prevent_box .col_left .card .card_icon {
     position: relative;
     text-align: center;
-    height: 140px;
+    height: 25vh;
     background-color: #E2D9F3;
 }
 .prevent_box .col_left .card .card_icon span {
@@ -843,7 +843,7 @@ header {
     }
 }
 
-@media all and (max-width: 481px) {
+@media  (max-width: 411px) {
     .protect_section .protect_main .protect_col_left {
         display: flex;
         flex-direction: column;
@@ -852,6 +852,10 @@ header {
     }
     .protect_section .protect_main .protect_col_left .lef_do li {
         padding-right: 0;
+    }
+    /* .header */
+    .header .header_items {
+        width: 100%;
     }
     /* banner section  */
     .banner {
@@ -863,6 +867,9 @@ header {
     }
     .banner .banner_items .banner_image {
         display: none;
+    }
+    .banner .banner_items .banner_desc {
+        width: 100%;
     }
     .banner .banner_items .banner_desc h1 {
         font-size: 25px;
@@ -892,6 +899,9 @@ header {
     }
     .whatis_section .whatis_video figure {
         margin-left: 0;
+    }
+    .whatis_section .whatis_desc  h2 {
+        font-size: 24px;
     }
     .whatis_section .whatis_desc {
         margin: 0 auto;
