@@ -696,8 +696,28 @@ header {
     color: #e84a5f;
 }
 /* footer section end    */
+@media all and (max-width: 1025px){
+    .prevent_section .prevent_box {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .prevent_section .prevent_box .col_left {
+        max-width: 100%;
+    }
+    .prevent_section .prevent_box .col_right {
+        width: 100%;
+    }
+    .prevent_section .prevent_box .col_left .card {
+        height: 40vh;
+        display: unset;
+    }
+    .prevent_section .prevent_box .col_left .card_icon {
+        height: 20vh;
+    }
+}
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 875px) {
 
     .banner .banner_items {
         display: flex;
@@ -714,19 +734,21 @@ header {
      .header_nav .menu-btn {
         display: block;
         color: #000;
-        margin-right: 20px; 
+        margin-right: 20px;
+        z-index: 3; 
     }
     .header_nav ul{
         display: flex;
         flex-direction: column;
         position: fixed;
         width: 100%; 
-        height: 50vh; 
+        height: 100vh; 
         background-color:#EAE2F6;
-        top: 60px;
+        top: 0px;
         right: -100%;
         text-align: center;
         transition: all 0.5s;
+        z-index: 2;
     }
     .header_nav li {
         width: 100%;
@@ -734,6 +756,7 @@ header {
         border-bottom: 2px solid #fff;
         margin-left: 0  !important;
         padding: 8px;
+        background-color:#EAE2F6;
         
     }
     #hamburger:checked ~ ul {
@@ -778,6 +801,13 @@ header {
     }
     .prevent_section .prevent_box .col_right {
         width: 100%;
+    }
+    .prevent_section .prevent_box .col_left .card {
+        height: 70vh;
+        display: unset;
+    }
+    .prevent_section .prevent_box .col_left .card_icon {
+        height: 30vh;
     }
 
     /* protect_section  */
@@ -845,7 +875,7 @@ header {
     }
 }
 
-@media  (max-width: 411px) {
+@media  (max-width: 580px) {
     .protect_section .protect_main .protect_col_left {
         display: flex;
         flex-direction: column;
@@ -865,7 +895,7 @@ header {
     /* banner section  */
     .banner {
         padding-top: 20px;
-        height: 28vh;
+        height: 35vh;
     }
     .banner .banner_items {
         width: 85%;
